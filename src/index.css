@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #FF4D00;
+  color: #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #0D0D0D inset;
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
+}
