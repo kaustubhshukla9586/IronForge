@@ -44,6 +44,11 @@ export default function BookingForm() {
     setStatus('loading')
     setErrorMsg('')
 
+    if (formData.phone.length !== 10) {
+    setError('Phone number must be exactly 10 digits.')
+    return
+      }
+
     try {
       const { error } = await supabase
         .from('demo_bookings')
@@ -269,6 +274,8 @@ export default function BookingForm() {
                   <input
                     name="phone"
                     type="tel"
+                    maxLength={10}
+                    pattern="[0-9]{10}"
                     required
                     value={form.phone}
                     onChange={handleChange}
