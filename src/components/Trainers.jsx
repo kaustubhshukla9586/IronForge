@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Instagram, Twitter } from 'lucide-react'
+import { Globe, ExternalLink } from 'lucide-react'
 
 const trainers = [
   {
@@ -132,7 +132,7 @@ export default function Trainers() {
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#FF4D00')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
                   >
-                    <Instagram size={18} />
+                    <Globe size={18} />
                   </a>
                   <a
                     href="#"
@@ -141,7 +141,7 @@ export default function Trainers() {
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#FF4D00')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
                   >
-                    <Twitter size={18} />
+                    <ExternalLink size={18} />
                   </a>
                 </div>
               </div>
